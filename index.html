@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Grid Hub | Pusat Jaringan Hijau</title>
+    
+    <meta name="description" content="Jelajahi, bandingkan, dan pilih teknologi energi terbarukan: Surya, Angin, Geotermal, dan Hidrogen. Temukan karir hijau dan pelajari analisis data energi.">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-success" href="#">🌱 Green Grid Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#energi-az">Energi A-Z</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#simulasi">Simulasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pemrograman">Pemrograman Lanjut</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#karir">Karier Hijau</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link btn btn-success text-white px-3" href="#" data-bs-toggle="modal" data-bs-target="#aiChatModal">Tanya AI 🤖</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Pahami, Bandingkan, Pilih Energi Masa Depan Anda.</h1>
+            <p class="lead mt-4 mb-5">Jelajahi basis data komprehensif teknologi terbarukan, dari Surya hingga Geotermal.</p>
+            <a href="#simulasi" class="btn btn-warning btn-lg shadow-lg">Mulai Simulasi Sekarang</a>
+        </div>
+    </header>
+
+    <section id="energi-az" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-success">🔬 Energi A-Z: Menggali Sumber Daya</h2>
+            <div class="row text-center">
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card feature-card h-100 p-3 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">☀️ Surya</h3>
+                            <p class="card-text">Detail tentang PLTS fotovoltaik dan termal. Data LCOE dan efisiensi.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#suryaModal">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card feature-card h-100 p-3 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-info">💨 Angin</h3>
+                            <p class="card-text">Prinsip kerja turbin darat dan lepas pantai. Kebutuhan kecepatan angin.</p>
+                            <a href="#" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#anginModal">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="card feature-card h-100 p-3 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">🌋 Geotermal</h3>
+                            <p class="card-text">Memanfaatkan panas bumi untuk listrik stabil. Cocok untuk wilayah vulkanik.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#geotermalModal">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                    <div class="card feature-card h-100 p-3 shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-secondary">🧪 Hidrogen & Penyimpanan</h3>
+                            <p class="card-text">Peran Hidrogen Hijau dan teknologi penyimpanan energi jangka panjang.</p>
+                            <a href="#" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#hidrogenModal">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="simulasi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-success">⚙️ Simulasi: Pilih Energi Anda</h2>
+            <p class="text-center mb-4">Masukkan detail di bawah ini untuk mendapatkan rekomendasi teknologi energi terbarukan yang paling optimal untuk lokasi dan kebutuhan Anda.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="p-4 border rounded shadow-sm bg-white">
+                        <div class="mb-3">
+                            <label for="lokasi" class="form-label">Lokasi Geografis (Kota/Provinsi)</label>
+                            <input type="text" class="form-control" id="lokasi" placeholder="Contoh: Yogyakarta">
+                        </div>
+                        <div class="mb-3">
+                            <label for="konsumsi" class="form-label">Konsumsi Energi Bulanan Rata-Rata (kWh)</label>
+                            <input type="number" class="form-control" id="konsumsi" placeholder="Contoh: 300">
+                        </div>
+                        <div class="mb-3">
+                            <label for="anggaran" class="form-label">Anggaran Awal yang Tersedia ($)</label>
+                            <input type="number" class="form-control" id="anggaran" placeholder="Contoh: 5000">
+                        </div>
+                        <div class="mb-4">
+                            <label for="ruang" class="form-label">Ketersediaan Ruang</label>
+                            <select class="form-select" id="ruang">
+                                <option value="atap">Atap Tersedia (Cocok untuk Surya)</option>
+                                <option value="lahan">Lahan Luas (Cocok untuk Angin/Skala Besar)</option>
+                                <option value="terbatas">Ruang Sangat Terbatas</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Dapatkan Rekomendasi</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="hasil-simulasi" class="mt-5 p-4 border rounded shadow-lg bg-white" style="display: none;">
+                </div>
+        </div>
+    </section>
+
+    <section id="pemrograman" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-success">💾 Pemrograman Lanjut: Mengoptimalkan Jaringan Cerdas</h2>
+            <p class="text-center mb-4 lead">Pelajari bagaimana Python dan Analisis Data digunakan untuk memprediksi konsumsi, mengelola Smart Grid, dan meningkatkan efisiensi energi.</p>
+            
+            <div class="row">
+                
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 border rounded shadow-sm h-100 feature-card">
+                        <h4 class="text-primary mb-3">Analisis Waktu Nyata 📈</h4>
+                        <p>Gunakan pustaka **Python** seperti Pandas dan Matplotlib untuk menganalisis pola konsumsi energi historis dan memprediksi beban puncak.</p>
+                        <p class="small text-muted">Contoh Proyek: Visualisasi Profil Beban Harian.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pythonModal">Lihat Tutorial Python</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 border rounded shadow-sm h-100 feature-card">
+                        <h4 class="text-info mb-3">Algoritma Smart Grid 💡</h4>
+                        
+                        
+
+
+
+
+
+[Image of smart grid architecture diagram]
+
+
+
+
+                        <p>Memahami dan mengimplementasikan algoritma optimasi seperti **MPC (Model Predictive Control)** untuk menyeimbangkan pasokan dan permintaan di jaringan cerdas.</p>
+                        <p class="small text-muted">Fokus pada integrasi sumber daya terdistribusi (DERs).</p>
+                        <a href="#" class="btn btn-outline-info btn-sm" data-bs-toggle="modal" data-bs-target="#mpcModal">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 border rounded shadow-sm h-100 feature-card">
+                        <h4 class="text-danger mb-3">IoT dan Monitoring Energi 🌐</h4>
+                        <p>Gunakan sensor (misalnya, **Raspberry Pi** atau **Arduino**) untuk mengumpulkan data energi secara real-time dan mengirimkannya ke platform cloud (AWS/Azure).</p>
+                        <p class="small text-muted">Contoh Proyek: Membangun Meter Cerdas.</p>
+                        <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#iotModal">Mulai Proyek IoT</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                
+                <div class="col-lg-8 mb-4"> <div class="p-4 border rounded shadow-lg bg-light h-100 d-flex flex-column justify-content-center align-items-center">
+                        <h4 class="text-success mb-3 text-center">Visualisasi Data Energi Anda</h4>
+                        <p class="text-muted text-center">Profil Beban Harian Khas (Lihat puncak konsumsi di malam hari).</p>
+                        
+                        <div style="width: 100%; max-width: 400px; height: 250px; position: relative;">
+                            <canvas id="defaultLoadProfileChart"></canvas>
+                        </div>
+                        
+                        <p class="mt-3 text-center">Gunakan pustaka seperti **Matplotlib** atau **Seaborn** untuk membuat visualisasi yang menarik dari data Anda.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#visualisasiModal">Buatkan Grafik Anda Sendiri</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="karir" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4 fw-bold text-success">📈 Masa Depan Hijau: Investasi & Profesi</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <h4 class="text-primary">Indeks Saham Hijau</h4>
+                        <p>Lacak kinerja perusahaan terkemuka di sektor energi terbarukan. Analisis tren dan potensi investasi berkelanjutan.</p>
+                        <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#indeksModal">Lihat Indeks</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 border rounded shadow-sm h-100">
+                        <h4 class="text-info">Peta Pekerjaan Hijau</h4>
+                        <p>Temukan peran karier yang berkembang pesat seperti Teknisi Turbin Angin dan Konsultan Keberlanjutan.</p>
+                        <a href="#" class="btn btn-sm btn-outline-info" data-bs-toggle="modal" data-bs-target="#karirModal">Temukan Pekerjaan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 The Green Grid Hub. Semua Hak Dilindungi. | 
+                <a href="#" class="text-white mx-1" data-bs-toggle="modal" data-bs-target="#aiChatModal">Pusat Bantuan AI</a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="suryaModal" tabindex="-1" aria-labelledby="suryaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="suryaModalLabel">☀️ Energi Surya: Fotovoltaik (PV)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    
+
+
+
+
+
+[Image of photovoltaic solar panel diagram]
+
+
+
+                    <p class="lead">Energi surya (Matahari) adalah sumber energi terbarukan yang paling banyak tersedia. Dua teknologi utamanya adalah Fotovoltaik (PLTS) dan Termal Surya.</p>
+                    <h6 class="text-primary mt-4">Analisis Kunci</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Efisiensi Rata-Rata:</strong> 15% - 22% (untuk panel komersial)</li>
+                        <li><strong>LCOE (Levelized Cost of Energy):</strong> Termasuk yang paling kompetitif secara global.</li>
+                        <li><strong>Aplikasi:</strong> Skala rumah tangga (atap) hingga pembangkit listrik skala utilitas.</li>
+                    </ul>
+                    <h6 class="text-primary mt-4">Prinsip Kerja Dasar</h6>
+                    <p>Sel fotovoltaik mengubah energi cahaya (foton) langsung menjadi arus listrik melalui efek fotovoltaik. Energi yang dihasilkan adalah Arus Searah (DC) dan perlu diubah menjadi Arus Bolak-Balik (AC) menggunakan *inverter* untuk digunakan di rumah atau disalurkan ke jaringan listrik.</p>
+                    <div class="alert alert-warning" role="alert">
+                        Tantangan utama adalah intermitensi (hanya menghasilkan listrik saat Matahari bersinar). Hal ini memerlukan solusi penyimpanan energi yang baik.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="anginModal" tabindex="-1" aria-labelledby="anginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="anginModalLabel">💨 Energi Angin: Turbin Darat & Lepas Pantai</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    
+
+
+
+
+
+[Image of horizontal axis wind turbine diagram]
+
+
+
+                    <p class="lead">Energi angin dihasilkan dengan mengubah energi kinetik dari angin menjadi energi listrik menggunakan turbin angin raksasa.</p>
+                    <h6 class="text-info mt-4">Tipe Utama</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Darat (Onshore):</strong> Lebih murah, lebih mudah dipelihara, namun terbatas oleh ketersediaan lahan dan masalah kebisingan.</li>
+                        <li><strong>Lepas Pantai (Offshore):</strong> Memanfaatkan kecepatan angin yang lebih stabil dan kuat di laut, menghasilkan energi lebih banyak, tetapi biaya instalasi lebih tinggi.</li>
+                    </ul>
+                    <h6 class="text-info mt-4">Kebutuhan Kecepatan</h6>
+                    <p>Turbin komersial biasanya mulai beroperasi pada kecepatan angin sekitar **3-4 m/s** dan mencapai output penuh pada sekitar **12-15 m/s**. Kecepatan angin yang terlalu tinggi dapat menyebabkan turbin berhenti untuk menghindari kerusakan.</p>
+                    <div class="alert alert-success" role="alert">
+                        Turbin lepas pantai menjadi masa depan energi angin karena kecepatan angin yang konsisten mengurangi intermitensi dibandingkan dengan angin darat.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="geotermalModal" tabindex="-1" aria-labelledby="geotermalModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="geotermalModalLabel">🌋 Energi Geotermal: Panas Bumi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    
+
+
+
+
+
+[Image of geothermal power plant process diagram]
+
+
+
+                    <p class="lead">Energi geotermal memanfaatkan panas internal inti bumi. Ini adalah salah satu dari sedikit sumber daya terbarukan yang dapat menyediakan listrik secara **baseload** (stabil 24/7).</p>
+                    <h6 class="text-danger mt-4">Kelebihan Utama</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Stabil (Baseload):</strong> Tidak tergantung pada cuaca atau waktu.</li>
+                        <li><strong>Jejak Karbon Rendah:</strong> Emisi sangat kecil, terutama pada sistem siklus biner.</li>
+                        <li><strong>Efisiensi Lahan:</strong> Membutuhkan lebih sedikit lahan per MWh dibandingkan tenaga surya atau angin.</li>
+                    </ul>
+                    <h6 class="text-danger mt-4">Keterbatasan</h6>
+                    <p>Energi ini terbatas pada wilayah yang memiliki sumber daya panas bumi yang mudah diakses (biasanya daerah vulkanik). Biaya pengeboran awal sangat tinggi dan penuh risiko.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="hidrogenModal" tabindex="-1" aria-labelledby="hidrogenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="hidrogenModalLabel">🧪 Hidrogen Hijau & Solusi Penyimpanan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Hidrogen Hijau adalah energi yang diproduksi melalui **elektrolisis air** menggunakan listrik yang bersumber dari energi terbarukan (misalnya, surya atau angin).</p>
+                    <h6 class="text-secondary mt-4">1. Produksi (Elektrolisis)</h6>
+                    
+                    
+
+
+
+
+
+[Image of hydrogen fuel cell process]
+
+
+
+
+                    <p>Proses ini memecah molekul air ($H_2O$) menjadi Hidrogen ($H_2$) dan Oksigen ($O_2$) menggunakan arus listrik bersih. Hidrogen yang dihasilkan tidak memiliki jejak karbon dan dianggap sebagai pembawa energi masa depan.</p>
+                    $$2H_2O (l) \xrightarrow{\text{Listrik}} 2H_2 (g) + O_2 (g)$$
+                    <h6 class="text-secondary mt-4">2. Penyimpanan Jangka Panjang (Long-Duration Energy Storage - LDES)</h6>
+                    <p>Hidrogen berperan penting sebagai salah satu solusi LDES, mengatasi masalah intermitensi sumber daya seperti surya dan angin. Energi listrik diubah menjadi hidrogen, disimpan dalam skala besar (misalnya, di bawah tanah), dan kemudian diubah kembali menjadi listrik saat dibutuhkan melalui sel bahan bakar (Fuel Cell).</p>
+                    <h6 class="text-secondary mt-4">Peran Kunci</h6>
+                    <ul class="list-unstyled">
+                        <li><strong>Dekomisioning:</strong> Mendekatkan jaringan industri berat (penerbangan, pengiriman) dan menyediakan bahan bakar bersih.</li>
+                        <li><strong>Integrasi Jaringan:</strong> Menjaga stabilitas jaringan listrik dengan menyimpan energi berlebih selama berminggu-minggu atau berbulan-bulan.</li>
+                    </ul>
+                    <div class="alert alert-info" role="alert">
+                        Tantangan utama adalah efisiensi keseluruhan siklus (dari listrik ke hidrogen, dan kembali ke listrik) yang masih lebih rendah dibandingkan baterai, tetapi lebih unggul untuk penyimpanan energi dalam jumlah masif dan jangka waktu yang sangat panjang.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="pythonModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="pythonModalLabel">📈 Tutorial Python: Analisis Energi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Pelajari dasar-dasar menggunakan Python untuk analisis data energi waktu nyata.</p>
+                    <h6 class="text-primary mt-4">Langkah 1: Mempersiapkan Lingkungan</h6>
+                    <p>Pastikan Anda telah menginstal **Python** dan pustaka penting seperti **Pandas** (untuk manipulasi data) dan **Matplotlib** (untuk visualisasi data).</p>
+                    <h6 class="text-primary mt-4">Langkah 2: Mengimpor Data</h6>
+                    <p>Gunakan Pandas untuk membaca data historis konsumsi dari file CSV atau database. Pastikan data Anda bersih dan terformat dengan baik.</p>
+                    <pre class="bg-dark text-white p-3 rounded small"><code># Contoh: Membaca data dari file CSV
+import pandas as pd
+df = pd.read_csv('data_konsumsi_harian.csv')</code></pre>
+
+                    <h6 class="text-primary mt-4">Langkah 3: Visualisasi Tren</h6>
+                    <p>Buat visualisasi untuk mengidentifikasi pola harian, mingguan, atau musiman dalam penggunaan energi.</p>
+                    <pre class="bg-dark text-white p-3 rounded small"><code># Contoh: Plot tren harian
+import matplotlib.pyplot as plt
+plt.plot(df['Waktu'], df['Konsumsi_kWh'])
+plt.title('Tren Konsumsi Energi')
+plt.show()</code></pre>
+                    <div class="alert alert-info" role="alert">
+                        Langkah selanjutnya melibatkan penggunaan Machine Learning (seperti model ARIMA atau Neural Network) untuk memprediksi beban energi di masa depan.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mpcModal" tabindex="-1" aria-labelledby="mpcModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="mpcModalLabel">💡 Model Predictive Control (MPC)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">MPC adalah teknik kontrol canggih yang digunakan dalam Smart Grid untuk mengoptimalkan operasi sistem, memprediksi permintaan, dan mengambil tindakan korektif secara *real-time*.</p>
+                    
+                    
+                    
+                    <h6 class="text-info mt-4">Bagaimana MPC Bekerja di Smart Grid?</h6>
+                    <ol>
+                        <li>**Prediksi:** MPC menggunakan model matematika (fisika sistem atau data historis) untuk memprediksi perilaku sistem (misalnya, output surya, permintaan beban) selama rentang waktu masa depan.</li>
+                        <li>**Optimasi:** Berdasarkan prediksi, MPC menghitung serangkaian tindakan kontrol optimal (misalnya, menyalakan/mematikan generator, mengisi/mengosongkan baterai) untuk meminimalkan biaya atau memaksimalkan efisiensi.</li>
+                        <li>**Implementasi:** Hanya tindakan kontrol pertama dalam urutan optimal yang diterapkan ke sistem.</li>
+                        <li>**Pengulangan:** Proses diulang pada langkah waktu berikutnya, memungkinkan MPC untuk terus beradaptasi dengan kondisi yang berubah (disebut *receding horizon*).</li>
+                    </ol>
+                    <h6 class="text-info mt-4">Penerapan Kunci</h6>
+                    <ul class="list-unstyled">
+                        <li>**Manajemen Baterai:** Menentukan kapan harus menyimpan energi berlebih dari surya/angin dan kapan harus melepaskannya ke jaringan.</li>
+                        <li>**Pengaturan Frekuensi:** Memastikan keseimbangan daya yang cepat untuk menjaga kualitas daya.</li>
+                        <li>**Integrasi DER:** Mengelola ribuan sumber daya terdistribusi (seperti PLTS atap) secara terpusat untuk stabilitas jaringan keseluruhan.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="iotModal" tabindex="-1" aria-labelledby="iotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="iotModalLabel">🌐 Proyek IoT: Membangun Meter Cerdas</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Proyek ini berfokus pada pembangunan sistem untuk mengukur, memantau, dan mengirimkan data konsumsi energi secara *real-time* menggunakan perangkat keras *Internet of Things* (IoT) berbiaya rendah.</p>
+                    
+                    
+                    
+                    <h6 class="text-danger mt-4">Komponen Utama Proyek</h6>
+                    <ol>
+                        <li>**Sensor Pengukur Arus:** Menggunakan sensor non-invasif seperti SCT-013 untuk mengukur arus listrik tanpa memotong kabel.</li>
+                        <li>**Mikrokontroler:** Perangkat seperti **Arduino Uno** atau **ESP32** untuk membaca data sensor dan memprosesnya menjadi nilai kWh yang berarti.</li>
+                        <li>**Modul Komunikasi:** Modul Wi-Fi (built-in pada ESP32) untuk mengirimkan data ke internet.</li>
+                        <li>**Platform Cloud:** Menggunakan layanan seperti **ThingSpeak**, **AWS IoT Core**, atau **Google Cloud IoT** sebagai *broker* MQTT untuk menerima, menyimpan, dan memvisualisasikan data.</li>
+                    </ol>
+                    <h6 class="text-danger mt-4">Alur Data (Data Flow)</h6>
+                    <p>Sensor mengukur arus (A) $\rightarrow$ Mikrokontroler menghitung daya (Watt) $\rightarrow$ Daya terintegrasi menjadi Energi (kWh) $\rightarrow$ Data dikirim via Wi-Fi $\rightarrow$ Platform Cloud menyimpan & memvisualisasikan data.</p>
+                    <div class="alert alert-warning" role="alert">
+                        Tantangan utama adalah kalibrasi sensor agar pembacaan arus dan tegangan seakurat meter listrik konvensional.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="visualisasiModal" tabindex="-1" aria-labelledby="visualisasiModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="visualisasiModalLabel">📊 Buat Grafik Profil Beban Sederhana</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Simulasikan profil konsumsi energi harian Anda (dalam kWh) dan lihat visualisasinya!</p>
+                    
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h6 class="text-success">Input Data (Contoh 6 Periode)</h6>
+                            <form id="data-grafik-form">
+                                <div class="mb-2">
+                                    <label for="jam1" class="form-label small">Jam 00:00 - 04:00 (Tidur)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam1" value="2.0" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jam2" class="form-label small">Jam 04:00 - 08:00 (Pagi)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam2" value="4.5" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jam3" class="form-label small">Jam 08:00 - 12:00 (Siang)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam3" value="3.0" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jam4" class="form-label small">Jam 12:00 - 16:00 (Sore)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam4" value="5.5" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jam5" class="form-label small">Jam 16:00 - 20:00 (Puncak 1)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam5" value="8.0" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label for="jam6" class="form-label small">Jam 20:00 - 24:00 (Puncak 2)</label>
+                                    <input type="number" step="0.1" class="form-control form-control-sm" id="jam6" value="7.0" required>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-sm w-100 mt-3">Buat Grafik</button>
+                            </form>
+                        </div>
+                        <div class="col-md-7">
+                            <h6 class="text-success text-center">Visualisasi Profil Beban Harian</h6>
+                            <div style="height: 300px;">
+                                <canvas id="customLoadProfileChart"></canvas>
+                            </div>
+                            <div class="mt-3 text-center">
+                                <p class="small text-muted">Total Konsumsi Harian: <strong id="total-konsumsi-harian">30.0</strong> kWh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="indeksModal" tabindex="-1" aria-labelledby="indeksModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="indeksModalLabel">📊 Indeks Saham Hijau & Investasi Berkelanjutan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Lacak kinerja perusahaan terkemuka di sektor energi terbarukan global. Investasi yang fokus pada keberlanjutan menunjukkan pertumbuhan yang kuat.</p>
+                    
+                    <h6 class="text-primary mt-4">Sumber Data Saham Hijau (Real-Time)</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="mb-1"><strong>Global Clean Energy Index (S&P)</strong></p>
+                            <a href="https://www.spglobal.com/spdji/en/indices/equity/sp-global-clean-energy-index/#overview" target="_blank" class="btn btn-outline-primary btn-sm">Lihat Kinerja di S&P Global ↗️</a>
+                        </li>
+                        <li class="mt-3">
+                            <p class="mb-1"><strong>Data ETF Energi Terbarukan (Contoh: iShares)</strong></p>
+                            <a href="https://www.ishares.com/us/products/239739/ishares-global-clean-energy-etf" target="_blank" class="btn btn-outline-primary btn-sm">Jelajahi ETF Global ↗️</a>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-info mt-4">
+                        <small>Untuk menampilkan grafik saham *real-time* langsung di sini, Anda memerlukan API (misalnya dari Alpha Vantage atau Yahoo Finance) dan pustaka grafik JS yang lebih canggih.</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="karirModal" tabindex="-1" aria-labelledby="karirModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="karirModalLabel">🌐 Peta Pekerjaan Hijau: Lowongan dan Profesi</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Sektor energi terbarukan menciptakan pekerjaan baru dengan kecepatan yang belum pernah ada sebelumnya. Berikut adalah sumber daya untuk memulai karier hijau Anda.</p>
+                    
+                    <h6 class="text-info mt-4">Contoh Profesi Paling Dicari:</h6>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Insinyur Sistem PLTS (Solar PV Engineer)</li>
+                        <li class="list-group-item">Teknisi Turbin Angin (Wind Turbine Technician)</li>
+                        <li class="list-group-item">Analis Data Energi (Energy Data Scientist)</li>
+                        <li class="list-group-item">Konsultan Keberlanjutan (Sustainability Consultant)</li>
+                    </ul>
+
+                    <h6 class="text-info mt-4">Temukan Lowongan Pekerjaan Hijau</h6>
+                    <p>Gunakan portal pencarian pekerjaan khusus yang berfokus pada keberlanjutan dan energi terbarukan:</p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/jobs/search?keywords=renewable%20energy" target="_blank" class="btn btn-outline-info btn-sm">Cari di LinkedIn Jobs ↗️</a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://www.jobstreet.co.id/id/renewable-energy-jobs" target="_blank" class="btn btn-outline-info btn-sm">Cari Pekerjaan di JobStreet ↗️</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aiChatModal" tabindex="-1" aria-labelledby="aiChatModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="aiChatModalLabel">Tanya AI 🤖</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Selamat datang di pusat bantuan AI! Anda bisa bertanya tentang definisi, data teknis, atau membandingkan teknologi energi di sini.</p>
+                    <textarea class="form-control" rows="3" placeholder="Masukkan pertanyaan Anda..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Kirim Pertanyaan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script>
+        // Batas Konsumsi
+        const BATAS_NORMAL_OVERLOAD = 30.0; // Merah jika > 30 kWh
+        const BATAS_NORMAL_WARNING = 26.0;  // Kuning jika 26 < Total <= 30
+    
+        // Warna
+        const COLOR_AMAN = 'rgba(76, 175, 80, 0.8)'; // Hijau
+        const COLOR_WARNING = 'rgba(255, 193, 7, 0.8)'; // Kuning
+        const COLOR_OVERLOAD = 'rgba(255, 99, 132, 0.8)'; // Merah
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            // ===============================================
+            // 1. FUNGSI SIMULASI REKOMENDASI ENERGI (Tidak Berubah)
+            // ===============================================
+            const formSimulasi = document.querySelector('#simulasi form');
+            const hasilDiv = document.getElementById('hasil-simulasi');
+    
+            formSimulasi.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+    
+                const lokasi = document.getElementById('lokasi').value;
+                const konsumsi = parseFloat(document.getElementById('konsumsi').value);
+                const anggaran = parseFloat(document.getElementById('anggaran').value);
+                const ruang = document.getElementById('ruang').value;
+    
+                let rekomendasiTeknologi = "";
+                let detailRekomendasi = "";
+                let warnaRekomendasi = "";
+    
+                if (ruang === 'atap') {
+                    rekomendasiTeknologi = "Energi Surya (PLTS Atap)";
+                    warnaRekomendasi = "primary";
+                    detailRekomendasi += "Ketersediaan atap adalah aset utama, menjadikan PLTS fotovoltaik sebagai pilihan yang paling cepat dan efisien. ";
+                } else if (ruang === 'lahan' && lokasi.toLowerCase().includes('pantai')) {
+                    rekomendasiTeknologi = "Energi Angin/Surya Skala Besar";
+                    warnaRekomendasi = "info";
+                    detailRekomendasi += "Lahan luas dan potensi angin pesisir memungkinkan proyek turbin angin atau farm surya skala besar.";
+                } else if (ruang === 'lahan' && lokasi.toLowerCase().includes('vulkanik') || lokasi.toLowerCase().includes('sumatera')) {
+                     rekomendasiTeknologi = "Energi Geotermal (Potensi Jangka Panjang)";
+                    warnaRekomendasi = "danger";
+                    detailRekomendasi += "Wilayah Anda memiliki potensi panas bumi yang tinggi, menawarkan solusi listrik baseload (membutuhkan studi kelayakan mendalam). ";
+                } else if (konsumsi > 500 && anggaran > 10000) {
+                     rekomendasiTeknologi = "Sistem Hibrida Surya-Baterai";
+                    warnaRekomendasi = "success";
+                    detailRekomendasi += "Kombinasi PLTS dan penyimpanan baterai disarankan untuk memenuhi konsumsi tinggi dan mengatasi intermitensi.";
+                } else {
+                    rekomendasiTeknologi = "Analisis Lokasi Lanjutan Diperlukan";
+                    warnaRekomendasi = "warning";
+                    detailRekomendasi += "Kami merekomendasikan studi kelayakan energi untuk menentukan sumber daya terbaik di lokasi spesifik Anda. ";
+                }
+                
+                const kWhPerHari = konsumsi / 30;
+                const kapasitasKWp = (kWhPerHari / 4); 
+    
+                const hasilHTML = `
+                    <h3 class="text-center text-success mb-3">✅ Hasil Rekomendasi Energi Anda</h3>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr><th>Lokasi</th><td>${lokasi}</td></tr>
+                            <tr><th>Konsumsi (kWh/Bulan)</th><td>${konsumsi.toLocaleString('id-ID')} kWh</td></tr>
+                            <tr><th>Anggaran Awal ($)</th><td>$ ${anggaran.toLocaleString('en-US')}</td></tr>
+                            <tr><th>Rekomendasi Teknologi Utama</th><td><span class="badge bg-${warnaRekomendasi} text-white">${rekomendasiTeknologi}</span></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="alert alert-${warnaRekomendasi} mt-3">
+                        <strong>Analisis Singkat:</strong> ${detailRekomendasi}
+                        <p class="small mt-2">Perkiraan Kapasitas yang dibutuhkan: sekitar <strong>${kapasitasKWp.toFixed(2)} kWp</strong> untuk memenuhi kebutuhan harian ${kWhPerHari.toFixed(2)} kWh (berdasarkan asumsi 4 jam puncak surya).</p>
+                    </div>
+                `;
+    
+                hasilDiv.innerHTML = hasilHTML;
+                hasilDiv.style.display = 'block'; 
+                hasilDiv.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // ===============================================
+            // 2. INISIALISASI GRAFIK DEFAULT (Tidak Berubah)
+            // ===============================================
+            const ctxDefault = document.getElementById('defaultLoadProfileChart').getContext('2d');
+            new Chart(ctxDefault, {
+                type: 'bar',
+                data: {
+                    labels: ['00-04', '04-08', '08-12', '12-16', '16-20', '20-24'],
+                    datasets: [{
+                        label: 'Konsumsi Rata-Rata (kWh)',
+                        data: [2.0, 4.5, 3.0, 5.5, 8.0, 7.0], 
+                        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Energi (kWh)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+    
+            // ===============================================
+            // 3. FUNGSI GRAFIK CUSTOM (MODAL VISUALISASI)
+            // ===============================================
+            const ctxCustom = document.getElementById('customLoadProfileChart').getContext('2d');
+            const customChart = new Chart(ctxCustom, {
+                type: 'bar',
+                data: {
+                    labels: ['00-04', '04-08', '08-12', '12-16', '16-20', '20-24'],
+                    datasets: [{
+                        label: 'Konsumsi Rata-Rata (kWh)',
+                        data: [2.0, 4.5, 3.0, 5.5, 8.0, 7.0], 
+                        backgroundColor: COLOR_AMAN, // Mulai dengan warna Hijau
+                        borderColor: COLOR_AMAN,
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Batas Normal (30 kWh)',
+                        data: [BATAS_NORMAL_OVERLOAD / 6, BATAS_NORMAL_OVERLOAD / 6, BATAS_NORMAL_OVERLOAD / 6, BATAS_NORMAL_OVERLOAD / 6, BATAS_NORMAL_OVERLOAD / 6, BATAS_NORMAL_OVERLOAD / 6],
+                        type: 'line',
+                        borderColor: COLOR_OVERLOAD,
+                        borderWidth: 2,
+                        fill: false,
+                        pointRadius: 0, 
+                        borderDash: [5, 5] 
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Energi (kWh)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            labels: {
+                                filter: function(item, chart) {
+                                    return item.datasetIndex === 0; 
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+    
+            const formGrafik = document.getElementById('data-grafik-form');
+            const totalKonsumsiHarian = document.getElementById('total-konsumsi-harian');
+            
+            const modalBody = document.querySelector('#visualisasiModal .modal-body');
+            let alertElement = document.createElement('div');
+            alertElement.className = 'mt-3';
+            const rowElement = modalBody.querySelector('.row');
+            if (rowElement) {
+                modalBody.insertBefore(alertElement, rowElement);
+            } else {
+                modalBody.appendChild(alertElement);
+            }
+    
+            // FUNGSI UTAMA: MENGHITUNG, MENAMPILKAN PERINGATAN, DAN MENGUBAH WARNA GRAFIK
+            function updateTotalConsumption(data) {
+                const total = data.reduce((sum, value) => sum + value, 0);
+                totalKonsumsiHarian.textContent = total.toFixed(1);
+    
+                let color, alertType, alertMessage;
+                
+                // Logika Tiga Warna
+                if (total > BATAS_NORMAL_OVERLOAD) {
+                    // MERAH (Overload)
+                    color = COLOR_OVERLOAD;
+                    alertType = "danger";
+                    const selisih = (total - BATAS_NORMAL_OVERLOAD).toFixed(1);
+                    alertMessage = `<strong>⚠️ OVERLOAD!</strong> Total konsumsi harian (${total.toFixed(1)} kWh) melebihi batas ($${BATAS_NORMAL_OVERLOAD}$ kWh). Segera tinjau penggunaan di jam puncak!`;
+                    
+                } else if (total > BATAS_NORMAL_WARNING) {
+                    // KUNING (Peringatan)
+                    color = COLOR_WARNING;
+                    alertType = "warning";
+                    alertMessage = `<strong>🔔 PERINGATAN!</strong> Konsumsi harian (${total.toFixed(1)} kWh) mendekati batas maksimum ($${BATAS_NORMAL_OVERLOAD}$ kWh). Pertimbangkan penghematan energi.`;
+                    
+                } else {
+                    // HIJAU (Aman)
+                    color = COLOR_AMAN;
+                    alertType = "success";
+                    alertMessage = `<strong>✅ AMAN!</strong> Konsumsi harian Anda (${total.toFixed(1)} kWh) berada di batas yang disarankan ($${BATAS_NORMAL_WARNING}$ kWh). Pertahankan!`;
+                }
+                
+                // 1. Ubah Warna Bar dan Border
+                customChart.data.datasets[0].backgroundColor = color;
+                customChart.data.datasets[0].borderColor = color;
+                
+                // 2. Tampilkan Peringatan
+                alertElement.innerHTML = `<div class="alert alert-${alertType}" role="alert">${alertMessage}</div>`;
+                
+                // Perbarui tampilan grafik
+                customChart.update();
+            }
+            
+            // Update saat modal dimuat (inisialisasi)
+            updateTotalConsumption(customChart.data.datasets[0].data);
+    
+    
+            formGrafik.addEventListener('submit', function(e) {
+                e.preventDefault();
+    
+                const newData = [
+                    parseFloat(document.getElementById('jam1').value),
+                    parseFloat(document.getElementById('jam2').value),
+                    parseFloat(document.getElementById('jam3').value),
+                    parseFloat(document.getElementById('jam4').value),
+                    parseFloat(document.getElementById('jam5').value),
+                    parseFloat(document.getElementById('jam6').value)
+                ];
+    
+                customChart.data.datasets[0].data = newData;
+                updateTotalConsumption(newData); 
+            });
+        });
+    </script>
+</body>
+</html>
